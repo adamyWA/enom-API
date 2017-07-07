@@ -3,7 +3,7 @@ class LoadView {
 	protected $view;
 	
 	function load($view) {
-		$viewPath = "\../views/";
+		$viewPath = getcwd() . "/src/views/";
 		$viewExt = ".php";
 		
 			include_once($viewPath . $view . $viewExt);
